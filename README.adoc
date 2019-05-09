@@ -47,7 +47,7 @@ These are 30-minute roundtables, usually very informal.
 They can give a topic a deep dive, involving discussion or demos.
 There's no telling how many people will show up, but we can print up some logo-emblazoned cards to make them stand out.
 
-Suggestions for and discussion of link:https://www.writethedocs.org/conf/portland/2019/unconference/[Unconference] session topics goes under the [*unconference* and *session* labels].
+Suggestions for and discussion of link:https://www.writethedocs.org/conf/portland/2019/unconference/[Unconference] session topics goes under the link:https://github.com/DocOps/wtd2019/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aunconference+label%3Asession[*unconference* and *session* labels].
 
 [[contributor-flow]]
 == Participant Contributions and Workflow
