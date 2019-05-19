@@ -1,0 +1,7 @@
+{% for t in site.data.glossary %}
+// tag::{{ t.term | slugify }}[]
+{{ t.term }}::
+{{ t.definition }}
+// end::{{ t.term | slugify }}[]
+{% endfor %}
+//
