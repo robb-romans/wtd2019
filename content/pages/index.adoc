@@ -1,0 +1,4 @@
+= Write the \{Ascii}Docs
+:page-permalink: index
+
+include::../../README.adoc[tags="body"]

@@ -1,0 +1,201 @@
+= Documentation Generators that Support AsciiDoc
+:page-permalink: asciidoc-static-site-generators
+
+[cols="2s,1,1a,3a,3a,3a",options="header"]
+|===
+// header
+| Application
+| AsciiDoc Support
+| Source Lang
+| Template Lang
+| Web Resources
+| Notes
+
+// ASCIIBINDER
+| AsciiBinder
+| native
+| Ruby
+| Tilt, ERB
+|
+* link:http://asciibinder.org/[Official site]
+* link:https://github.com/redhataccess/ascii_binder[Source icon:github[]]
+|
+* Maintainers now recommend Antora!
+
+
+// ANTORA
+| Antora
+| native
+| Node.js
+| Handlebars
+|
+* link:https://antora.org/[Official site]
+* link:https://gitlab.com/antora/antora/[Source icon:gitlab[]]
+|
+* Maintained by lead contributors to the Asciidoctor project.
+
+
+// AWESTRUCT
+| AweStruct
+| native
+| Ruby
+| Haml
+|
+* link:http://awestruct.org/[Official site]
+* link:https://github.com/awestruct/awestruct[Source icon:github[]]
+|
+
+
+// DOCPAD
+| DocPad
+| plugin
+| Coffeescript
+| Eco, Jade, Haml
+|
+* link:https://docpad.org[Official site]
+* link:https://github.com/fboulay/docpad-plugin-asciidoc[AsciiDoc plugin]
+* link:https://github.com/docpad/docpad[Source icon:github[]]
+|
+
+
+// DOCTOOLCHAIN
+| docToolChain
+| native
+| Groovy
+| arc42
+|
+* link:https://doctoolchain.github.io/docToolchain/[Official site]
+* link:https://github.com/docToolchain/docToolchain[Source icon:github[]]
+|
+* For documenting software architectures
+
+
+// GRAIN
+| Grain
+| native
+| Groovy
+| Groovy
+|
+* link:https://sysgears.com/grain/[Official site]
+* link:https://github.com/sysgears/grain[Source icon:github[]]
+|
+
+
+// HUGO
+| Hugo
+| plugin
+| Go
+| Go
+|
+* link:https://gohugo.io/[Official site]
+* link:https://github.com/gohugoio/hugo[Source icon:github[]]
+* link:https://gohugo.io/content-management/formats/#additional-formats-through-external-helpers[Extending with Helpers]
+* link:https://github.com/opensourceway/asciidoc-blog[AsciiDoc Blog demo]
+|
+
+
+// JBAKE
+| JBake
+| native
+| Java
+| Freemarker, Groovy, Thymeleaf, Jade
+|
+* link:https://jbake.org/[Official site]
+* link:https://github.com/jbake-org/jbake[Source icon:github[]]
+|
+
+
+// JEKYLL
+| Jekyll
+| plugin
+| Ruby
+| Liquid
+|
+* link:https://jekyllrb.com/[Official site]
+* link:https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc plugin]
+|
+* Most-popular SSG of all
+* The jekyll-asciidoc plugin is maintined by Asciidoctor.
+
+
+// LIQUIDOC
+| LiquiDoc
+| native
+| Ruby
+| Liquid
+|
+* link:https://www.ajyl.org/liquidoc[Official site]
+* link:https://github.com/DocOps/liquidoc-gem[Source icon:github[]]
+|
+* Uses Jekyll and Asciidoctor to generate sites, PDFs.
+
+
+// METALSMITH
+| Metalsmith
+| plugin
+| JavaScript
+| Handlebars
+|
+* link:https://metalsmith.io/[Official site]
+* link:https://github.com/segmentio/metalsmith[Source icon:github[]]
+|
+
+
+// MIDDLEMAN
+| Middleman
+| native
+| Ruby
+| ERB, Haml
+|
+* link:https://middlemanapp.com[Official site]
+* link:https://github.com/middleman/middleman[Source icon:github[]]
+* link:https://github.com/middleman/middleman-asciidoc[middleman-asciidoc plugin (*for versions < 3.0)]
+|
+
+
+// NANOC
+| Nanoc
+| native
+| Ruby
+| ERB
+|
+* link:https://nanoc.ws/[Official site]
+* link:https://github.com/nanoc/nanoc[Source icon:github[]]
+|
+
+
+// NIKOLA
+| Nikola
+| plugin
+| Python
+| Mako, Jinja2
+|
+* link:https://getnikola.com/[Official site]
+* link:https://github.com/getnikola/nikola[Source icon:github[]]
+|
+
+
+// PELICAN
+| Pelican
+| native*
+| Python
+| Jinja2
+|
+* link:https://blog.getpelican.com/[Official site]
+* link:https://github.com/getpelican/pelican[Source icon:github[]]
+|
+(* Uses link:http://www.methods.co.nz/asciidoc/[legacy AsciiDoc] for conversion)
+
+
+
+// SPRING REST DOCS
+| Spring REST Docs
+| native
+| Gradle
+| Mustache
+|
+* link:https://spring.io/projects/spring-restdocs[Official site]
+* link:https://github.com/spring-projects/spring-restdocs[Source icon:github[]]
+|
+
+|===

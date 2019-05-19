@@ -1,11 +1,10 @@
-= Asciidoctor Activities at Write the Docs Portland 2019
+= Write the \{Ascii}Docs
 :idprefix:
 :idseparator: -
-:repo
 ifndef::env-github[:icons: font]
 ifdef::env-github,env-browser[]
 :toc: macro
-:toclevels: 1
+:toclevels: 2
 endif::[]
 ifdef::env-github[]
 :!toc-title:
@@ -16,6 +15,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+// tag::body[]
 This repository/project facilitates planning for and participation in Asciidoctor-related “programming” at Write the Docs 2019.
 Asciidoctor is an official sponsor of Writing Day 2019 (Sunday, 19 May), but all of the activities discussed here are officially part of WTD 2019.
 
@@ -24,8 +24,10 @@ These are some ways we hope to enhance the WTD 2019 experience for ourselves and
 
 toc::[]
 
+== WTD Conference Presence
+
 [[writing-day]]
-== Writing Day
+=== Writing Day
 
 Asciidoctor is a proud sponsor of link:https://www.writethedocs.org/conf/portland/2019/writing-day/[WTD Writing Day 2019].
 As a nonprofit open-source provider, Asciidoctor will have a strong presence throughout the conference.
@@ -33,7 +35,7 @@ On Writing Day, volunteers will offer tutorials and workshops on common sticking
 Writing Day Activities are being planned under the link:https://github.com/DocOps/wtd2019/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22writing+day%22+label%3Asession+[*writing day* and *session* issues tags].
 
 [[lightning-talks]]
-== Lightning Talks
+=== Lightning Talks
 
 We should not nominate more than one Asciidoctor-specific Lightning talk, if that; and we should accept that the committee might reject it on the basis that it might look like favoritism.
 But we certainly have learned countless lessons in our years doing docs-as-code that are not exactly “on-brand”.
@@ -41,7 +43,7 @@ But we certainly have learned countless lessons in our years doing docs-as-code 
 Recommendations for 5-minute, general-audience lessons go under the link:https://github.com/DocOps/wtd2019/issues/2[Lightning Talks Brainstorm issue].
 
 [[unconference]]
-== Unconference Sessions
+=== Unconference Sessions
 
 These are 30-minute roundtables, usually very informal.
 They can give a topic a deep dive, involving discussion or demos.
@@ -49,19 +51,98 @@ There's no telling how many people will show up, but we can print up some logo-e
 
 Suggestions for and discussion of link:https://www.writethedocs.org/conf/portland/2019/unconference/[Unconference] session topics goes under the link:https://github.com/DocOps/wtd2019/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aunconference+label%3Asession[*unconference* and *session* labels].
 
+[[repo]]
+== This Repository/Project
+
+This GitHub project (DocOps/wtd2019) hosts the `origin` repository for Asciidoctor's presence at WTD.
+It also builds a demonstration website with content contributed by participants through a <<contributor-flow,GitHub-based workflow>>.
+
+This is an example project consisting of numerous components and lots of code.
+It took one person about five hours to set up.
+You are welcome to duplicate it and modify it for your own purposes.
+
+=== Platforms, Tools, & Dependencies
+
+Here is all the totally free, open-source software you will need to engage with this repository.
+
+[[git]]
+==== Source Control
+
+Asciidoctor does not require a source control system, and it works with any source-control system.
+Nevertheless, it should always be used in conjunction with Git.
+
+[[environment]]
+==== Rendering Environment
+
+In order to transform AsciiDoc files to HTML, this project uses a Ruby-based link:https://asciidoctor.org/[Asciidoctor] toolchain, including the link:https://jekyllrb.com/[Jekyll] static-site generator with Asciidoctor's link:https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc] plugin.
+
+These tools, in turn, rely on a Ruby runtime environment, which you must have installed to build the site locally.
+
+===== Ruby on MacOS or Linux
+
+If you're on Linux or MacOS, you probably have Ruby runtime.
+Using your preferred terminal application, check your Ruby version with `ruby -v`.
+Asciidoctor works on a huge range of Ruby versions, but Jekyll currently requires at least version 2.4.0.
+
+Use your OS's package manager (homebrew, apt-get, yum, dpkg, etc) to upgrade Ruby if needed.
+
+===== Ruby on Windows
+
+If you're on Windows, you need a proper Bash terminal emulator as well as Ruby runtime.
+You have probably already <<git,installed GitBash>>, so now you must
+Download the very latest version with DevKit.
+WTDer Anne Gentle has provided excellent instructions for getting link:https://www.docslikecode.com/learn/02-jekyll-ruby-gh-pages/[up and running on Windows with Ruby and Jekyll].
+(There are some good *MacOS* tips there as well.)
+
+==== Editing/Writing
+
+AsciiDoc markup can be edited using any application that handles plain text.
+The cross-platform editor with the most complete support and easiest installation process is link:https://atom.io/[Atom].
+Install it, then install the package *AsciiDoc Assistant* (menu:Preferences[+ Install] and search for `asciidoc`).
+
+==== Deployment
+
+The `origin` repository is on GitHub, and draft previews are built and deployed using Netlify, which also hosts the published version at http://adoc-wtd-2019.netlify.com.
+
+==== Alternative Tools
+
+If you don't like *AsciiDoc*, take a look at link:https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html[reStructuredText].
+
+Lots of people are picky about text/code editors.
+If *Atom* is not to your liking, consider any number of alternative link:https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[editors with AsciiDoc integration], including link:https://asciidocfx.com/[AsciidocFX].
+
+There are lots of alternatives to *Jekyll* for generating docs websites.
+Check out this list of link:https://gist.github.com/briandominick/e5754cc8438dd9503d936ef65fffbb2d[static site generators with AsciiDoc support] and the broader link:https://www.staticgen.com/[list of SSGs].
+
+*Netlify* is an outstanding deployment platform, but if you want to keep everything on GitHub, you can.
+link:https://pages.github.com/[GitHub Pages] can serve link:https://help.github.com/en/articles/using-a-static-site-generator-other-than-jekyll[any static website].
+You can also deploy to link:https://aws.amazon.com/getting-started/projects/host-static-website/[Amazon AWS S3] or any webserver anywhere.
+
 [[contributor-flow]]
-== Participant Contributions and Workflow
+=== Contributions & Workflow
 
 We intend to offer link:https://github.com/DocOps/wtd2019[_this repo and GitHub project space_] as a playground for the whole WTD2019/Asciidoctor experience.
 Participants in our Writing Day programming will be able to branch or fork this repo and issue merge requests with new content.
 
+[[meta]]
+== Meta
+
+Asciidoctor's presence at Write the Docs is an ad-hoc project.
+
 [[who]]
-== Who We Are
+=== Who We Are
 
 This project was kicked off by members of the teams behind link:https://asciidoctor.org/[Asciidoctor], link:https://antora.org/[Antora], and link:https://github.com/docops/liquidoc-gem[LiquiDoc] -- fully open-source tools intended to make the AsciiDoc markup language more powerful and accessible.
 If you want to get involved, link:https://github.com/DocOps/wtd2019/issues/3[let us know how!]
 
+[[beyond]]
+=== Beyond WTD2019
+
+This repository can be “versioned” to incorporate future events, as well.
+Our generated website could have a version switcher, versioned search, and so forth.
+
 [[license]]
-== License
+=== License
 
 This repository is maintained collaboratively by link:https://opendevise.com/[OpenDevise], link:http://codewriting.org/codewriter-brian-dominick[Codewriting], and other contributors, released like the rest of our toolchain, under link:[The MIT License].
+// end::body[]
