@@ -10,6 +10,7 @@ company_name: Asciidoctor
 # this appears in the footer
 
 github_editme_path: DocOps/wtd2019/blob/master/
+github_editme_text: Edit this page
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 host: 127.0.0.1
